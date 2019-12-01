@@ -71,12 +71,13 @@ function [fval_vec,strys] = FindK(x,strendo,strexo,strpar)
     end
     strys.rf = 1/strpar.beta_p-1;
     strys.r = (1/strpar.beta_p - 1 + strpar.delta_p)/(1 - strpar.tauK_p);
-
+    strys.T = strpar.T0_p + strexo.exo_T;
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
         strys.(['A_' ssec]) = exp(strexo.(['exo_' ssec]));
-        strys.(['N_' ssec]) = (strys.r / strpar.(['alpha_' ssec '_p']) / strys.(['A_' ssec]))^(1/(1-strpar.(['alpha_' ssec '_p']))) * strys.(['K_' ssec]);
-        strys.(['Y_' ssec]) = strys.(['A_' ssec]) * strys.(['K_' ssec])^strpar.(['alpha_' ssec '_p']) * (strys.(['N_' ssec]))^(1 - strpar.(['alpha_' ssec '_p']));
+        strys.(['D_' ssec]) = strpar.(['a_1_' ssec '_p']) + strpar.(['a_2_' ssec '_p']) * strys.T^(strpar.(['a_3_' ssec '_p']));
+        strys.(['N_' ssec]) = (strys.r / (strpar.(['alpha_' ssec '_p']) * strys.(['A_' ssec]) * (1 - strys.(['D_' ssec]))))^(1/(1-strpar.(['alpha_' ssec '_p']))) * strys.(['K_' ssec]);
+        strys.(['Y_' ssec]) = strys.(['A_' ssec]) * (1 - strys.(['D_' ssec])) * strys.(['K_' ssec])^strpar.(['alpha_' ssec '_p']) * (strys.(['N_' ssec]))^(1 - strpar.(['alpha_' ssec '_p']));
         strys.(['W_' ssec]) = (1 - strpar.(['alpha_' ssec '_p'])) * strys.(['Y_' ssec]) / strys.(['N_' ssec]);
     end
     strys.K = 0;
