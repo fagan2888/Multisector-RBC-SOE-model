@@ -1,0 +1,201 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 25 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+                                        First-Order                    Norm of 
+ Iteration  Func-count    Residual       optimality      Lambda           step
+     0           4        0.303612          0.0367         0.01
+     1           8       0.0736372          0.0159        0.001        2.72026
+     2          12      0.00233089         0.00272       0.0001        2.67224
+     3          16     3.44475e-06        9.74e-05        1e-05       0.772266
+     4          20     9.79843e-11        4.07e-07        1e-06      0.0405957
+     5          24     3.76959e-17        2.18e-10        1e-07    0.000245202
+     6          28      1.4947e-25        1.32e-14        1e-08    1.54087e-07
+     7          32     1.10934e-31        1.75e-17        1e-09    9.71012e-12
+     8          36     7.39557e-32        8.73e-18        1e-10    7.32746e-15
+     9          40      1.2326e-32        5.82e-18        1e-11    6.82795e-15
+
+<a href = "matlab: helpview('optim','eqn_solved_singular','CSHelpWindow');">Equation solved, solver stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and the vector of function values
+is near zero as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit4basicLM','fsolve'},{'optim:fsolve:Exit4detailedLM','fsolve','2.698847e-21','1.000000e-20','1.232595e-32','1.000000e-10'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K   		 39.9715
+C   		 3.95345
+B   		 0.00058925
+NX  		 5.95202e-06
+rf  		 0.010101
+G   		 0
+I   		 1.99857
+r   		 0.060101
+Y   		 5.95202
+N   		 1.64068
+Y_1 		 1.89997
+K_1 		 12.6452
+N_1 		 0.536983
+W_1 		 2.12294
+A_1 		 1
+Y_2 		 2.15208
+K_2 		 14.6812
+N_2 		 0.566718
+W_2 		 2.24049
+A_2 		 1
+Y_3 		 1.89997
+K_3 		 12.6452
+N_3 		 0.536983
+W_3 		 2.12294
+A_3 		 1
+
+                                        First-Order                    Norm of 
+ Iteration  Func-count    Residual       optimality      Lambda           step
+     0           4      1.2326e-32        5.82e-18         0.01
+
+<a href = "matlab: helpview('optim','eqn_solved_singular','CSHelpWindow');">Equation solved, solver stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and the vector of function values
+is near zero as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit4basicLM','fsolve'},{'optim:fsolve:Exit4detailedLM','fsolve','2.698847e-21','1.000000e-20','1.232595e-32','1.000000e-10'},true,true);;">stopping criteria details</a>>
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       2.776e-17        2.776e-17                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+          0.9373           0.9373                0
+            1.01             1.01                0
+           1.078            1.078                0
+             Inf              Inf                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+                                        First-Order                    Norm of 
+ Iteration  Func-count    Residual       optimality      Lambda           step
+     0           4         17.9146           0.662         0.01
+     1           8         4.40257           0.111        0.001        13.8708
+     2          12        0.771209          0.0204       0.0001         20.634
+     3          16       0.0485951         0.00353        1e-05        20.8409
+     4          20     0.000245313        0.000231        1e-06        8.93681
+     5          24     9.29579e-09        1.47e-06        1e-07       0.742929
+     6          28     1.26746e-15        5.19e-10        1e-08     0.00509136
+     7          32     5.94433e-24        2.71e-14        1e-09    2.82592e-06
+     8          36      1.2326e-32        1.78e-18        1e-10    2.15217e-10
+
+<a href = "matlab: helpview('optim','eqn_solved_singular','CSHelpWindow');">Equation solved, solver stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and the vector of function values
+is near zero as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit4basicLM','fsolve'},{'optim:fsolve:Exit4detailedLM','fsolve','2.297041e-21','1.000000e-20','1.232595e-32','1.000000e-10'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K   		 140.645
+C   		 13.9056
+B   		 0.00207284
+NX  		 2.09378e-05
+rf  		 0.010101
+G   		 0
+I   		 7.03223
+r   		 0.060101
+Y   		 20.9378
+N   		 1.64014
+Y_1 		 6.58065
+K_1 		 43.7973
+N_1 		 0.532863
+W_1 		 7.40977
+A_1 		 2.117
+Y_2 		 7.77649
+K_2 		 53.0501
+N_2 		 0.574412
+W_2 		 7.98753
+A_2 		 2.117
+Y_3 		 6.58065
+K_3 		 43.7973
+N_3 		 0.532863
+W_3 		 7.40977
+A_3 		 2.117
+
+                                        First-Order                    Norm of 
+ Iteration  Func-count    Residual       optimality      Lambda           step
+     0           4      1.2326e-32        1.78e-18         0.01
+
+<a href = "matlab: helpview('optim','eqn_solved_singular','CSHelpWindow');">Equation solved, solver stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and the vector of function values
+is near zero as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit4basicLM','fsolve'},{'optim:fsolve:Exit4detailedLM','fsolve','2.297041e-21','1.000000e-20','1.232595e-32','1.000000e-10'},true,true);;">stopping criteria details</a>>
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       5.042e-17        5.042e-17                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+          0.9373           0.9373                0
+           1.009            1.009                0
+           1.078            1.078                0
+             Inf              Inf                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+                                        First-Order                    Norm of 
+ Iteration  Func-count    Residual       optimality      Lambda           step
+     0           4      1.2326e-32        1.78e-18         0.01
+
+<a href = "matlab: helpview('optim','eqn_solved_singular','CSHelpWindow');">Equation solved, solver stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview('optim','norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and the vector of function values
+is near zero as measured by the value of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit4basicLM','fsolve'},{'optim:fsolve:Exit4detailedLM','fsolve','2.297041e-21','1.000000e-20','1.232595e-32','1.000000e-10'},true,true);;">stopping criteria details</a>>
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 100.6731, 	 time = 0.044
+Iter: 2,	 err. = 1.1133, 	 time = 0.026
+Iter: 3,	 err. = 0.20495, 	 time = 0.041
+Iter: 4,	 err. = 0.032912, 	 time = 0.036
+Iter: 5,	 err. = 0.00011979, 	 time = 0.029
+Iter: 6,	 err. = 2.207e-08, 	 time = 0.03
+
+Total time of simulation: 0.533
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m01s
